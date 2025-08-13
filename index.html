@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Igreja Batista Independente Betesda</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0D47A1; /* azul forte */
+            color: white;
+        }
+        header {
+            background-color: #64B5F6; /* azul clarinho */
+            padding: 40px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+        }
+        section {
+            padding: 40px 20px;
+        }
+        h2 {
+            color: #FFD700; /* dourado para títulos */
+        }
+        .agenda, .galeria, .formulario, .localizacao {
+            margin-top: 20px;
+        }
+        input, select {
+            display: block;
+            margin: 10px 0;
+            padding: 8px;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #FFD700;
+            color: black;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .mapa {
+            margin-top: 20px;
+        }
+        iframe {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+            border: none;
+            border-radius: 10px;
+        }
+        .localizacao button {
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+        .galeria div {
+            display: inline-block;
+            margin: 5px;
+            width: 150px;
+            height: 150px;
+            background-color: #1976D2;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Igreja Batista Independente Betesda</h1>
+    <p>Bem-vindos os membros da Igreja Batista Independente Betesda. Aqui é o site da nossa Igreja. Você já fez o seu cadastro? Se você já fez e não entrou, já veja nossas novidades e vídeos.</p>
+</header>
+
+<section class="agenda">
+    <h2>Agenda de Cultos</h2>
+    <p>As agendas estão aí embaixo, gente. Os nossos cultos, certo? Vão lá ver.</p>
+    <ul>
+        <li>Terça e Quinta: 19h</li>
+        <li>Domingo (primeiro domingo do mês): 8h</li>
+        <li>Domingo à noite: 18h30</li>
+    </ul>
+</section>
+
+<section class="galeria">
+    <h2>Galeria</h2>
+    <p>Confira os momentos da Igreja Batista Independente Betesda. Qualquer momento ajuda.</p>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<section class="formulario">
+    <h2>Cadastro de Membros</h2>
+    <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="date" placeholder="Data de Nascimento" required>
+        <input type="tel" placeholder="Telefone" required>
+        <input type="text" placeholder="Endereço" required>
+        <input type="file" accept="image/*" placeholder="Foto">
+        <button type="submit">Enviar Cadastro</button>
+    </form>
+</section>
+
+<section class="localizacao">
+    <h2>Localizações</h2>
+    <p>Veja onde estamos e escolha seu transporte:</p>
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3956.000000!2d-37.067190!3d-10.917230!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v0000000000000" allowfullscreen></iframe>
+    </div>
+    <div>
+        <!-- Igreja Sede -->
+        <button onclick="window.open('https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=-10.900000&dropoff[longitude]=-37.000000', '_blank')">Uber Igreja Sede</button>
+        <button onclick="window.open('https://99app.com/?dest=-10.900000,-37.000000', '_blank')">99 Igreja Sede</button>
+        <button onclick="window.open('https://waze.com/ul?ll=-10.900000,-37.000000&navigate=yes', '_blank')">Waze Igreja Sede</button>
+        <button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=-10.900000,-37.000000', '_blank')">Google Maps Igreja Sede</button>
+        <br>
+        <!-- Igreja FC -->
+        <button onclick="window.open('https://m.uber.com/ul/?action=setPickup&dropoff[latitude]=-10.918000&dropoff[longitude]=-37.000500', '_blank')">Uber Igreja FC</button>
+        <button onclick="window.open('https://99app.com/?dest=-10.918000,-37.000500', '_blank')">99 Igreja FC</button>
+        <button onclick="window.open('https://waze.com/ul?ll=-10.918000,-37.000500&navigate=yes', '_blank')">Waze Igreja FC</button>
+        <button onclick="window.open('https://www.google.com/maps/dir/?api=1&destination=-10.918000,-37.000500', '_blank')">Google Maps Igreja FC</button>
+    </div>
+</section>
+
+</body>
+</html>
